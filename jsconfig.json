@@ -1,4 +1,7 @@
 {
+  "typeAcquisition": {
+    "exclude": ["page"]
+  },
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"]
