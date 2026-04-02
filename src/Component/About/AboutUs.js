@@ -67,7 +67,7 @@ export default function AboutUs() {
         <div className="flex flex-col items-center w-full md:w-1/3">
           <div className="w-72 h-72 md:w-80 md:h-80 rounded-xl overflow-hidden border-4 border-gray-300 shadow-xl mb-4">
             <Image
-              src="/Ceo/Cofounder.jpg"
+              src="/Ceo/CoFounder.jpg"
               alt="Cofounder of Iris Eagle"
               width={300}
               height={300}
