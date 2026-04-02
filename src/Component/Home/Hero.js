@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const slides = [
@@ -50,7 +51,7 @@ export default function Hero() {
             fill
             className="object-cover"
             priority={idx === 0}
-            loading={idx === 0 || idx === 1 ? "eager" : "lazy"}
+            loading={idx === 0 ? "eager" : "lazy"}
           />
           <div className="absolute inset-0 bg-linear-to-t from-black/65 via-black/20 to-black/10" />
           <div className="absolute inset-0 z-20 flex items-center justify-center text-center px-4 sm:px-8 md:px-14">
@@ -82,20 +83,21 @@ export default function Hero() {
       {/* Horizontal Action List */}
       <nav className="w-full grid grid-cols-3 lg:grid-cols-6 gap-0 bg-white py-0 px-0 shadow-sm">
         {[
-          { label: "Contact us", icon: "📞" },
-          { label: "Price list", icon: "💲" },
-          { label: "Buy now", icon: "🛒" },
-          { label: "Pre-order", icon: "📝" },
-          { label: "Request Quote", icon: "🚗" },
-          { label: "Find your car", icon: "🔍" },
+          { label: "Contact us", icon: "📞", href: "/contact" },
+          { label: "Price list", icon: "💲", href: "/contact" },
+          { label: "Buy now", icon: "🛒", href: "/showroom/our-vehicles" },
+          { label: "Pre-order", icon: "📝", href: "/more/preorder" },
+          { label: "Request Quote", icon: "🚗", href: "/contact" },
+          { label: "Find your car", icon: "🔍", href: "/showroom/our-vehicles" },
         ].map((item, idx) => (
-          <button
+          <Link
             key={idx}
-            className="flex flex-col items-center justify-center gap-2 py-4 sm:py-5 md:py-6 px-2 sm:px-4 text-sm sm:text-base font-semibold text-red-600 hover:text-white hover:bg-red-600 border border-gray-200 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-inset"
+            href={item.href}
+            className="flex flex-col items-center justify-center gap-1 sm:gap-2 py-3 sm:py-5 md:py-6 px-1 sm:px-3 text-xs sm:text-sm font-semibold text-red-600 hover:text-white hover:bg-red-600 border border-gray-200 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-inset"
           >
-            <span className="text-xl sm:text-2xl md:text-3xl">{item.icon}</span>
+            <span className="text-sm sm:text-xl md:text-3xl">{item.icon}</span>
             <span className="text-center leading-tight">{item.label}</span>
-          </button>
+          </Link>
         ))}
       </nav>
     </>

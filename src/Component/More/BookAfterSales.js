@@ -34,6 +34,8 @@ export default function BookAfterSales() {
           fill
           className="object-cover object-center w-full h-full opacity-80"
           priority
+          quality={55}
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/50" />
       </div>

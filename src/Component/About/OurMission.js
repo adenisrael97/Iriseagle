@@ -17,6 +17,8 @@ export default function OurMission() {
               alt="Iris Eagle Customer Service"
               width={320}
               height={320}
+              sizes="(max-width: 640px) 256px, (max-width: 768px) 288px, 320px"
+              quality={72}
               className="object-cover w-full h-full"
             />
           </div>

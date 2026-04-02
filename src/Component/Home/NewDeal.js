@@ -1,4 +1,5 @@
 "use client";
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -23,8 +24,9 @@ const dealContent =
   "Unlock unbeatable savings this week only! Enjoy a 5% discount on our top 2026 models. Whether you crave luxury, space, or adventure, these vehicles deliver style, comfort, and performance. Don't miss out—limited stock available!";
 
 export default function NewDeal() {
+  const [loadedSet, setLoadedSet] = useState(new Set());
   return (
-    <div className="bg-white min-h-screen flex flex-col items-center px-2 xs:px-4 py-6 xs:py-8 md:py-10">
+    <div className="bg-white py-10 md:py-14 flex flex-col items-center px-4">
       <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-2 text-gray-900">Amazing Deal of the week</h1>
       <p className="text-center text-base xs:text-lg md:text-xl text-gray-700 mb-2">Get 5 % discount on any of this Vehicles</p>
       <p className="text-center text-sm xs:text-base md:text-lg text-gray-600 mb-6 max-w-2xl">{dealContent}</p>
@@ -32,13 +34,18 @@ export default function NewDeal() {
         {deals.map((deal, idx) => (
           <div key={idx} className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col transition-transform hover:scale-[1.02]">
             <Link href="/contact" className="relative w-full h-48 xs:h-56 sm:h-64 md:h-72 lg:h-80 block group focus:outline-none focus:ring-2 focus:ring-red-600">
+              {!loadedSet.has(idx) && (
+                <div className="absolute inset-0 z-10 bg-gray-200 animate-pulse rounded-t-2xl" />
+              )}
               <Image
                 src={deal.src}
                 alt={deal.name}
                 fill
                 className="object-cover group-hover:opacity-90 transition-opacity duration-200"
                 sizes="(max-width: 768px) 100vw, 33vw"
+                quality={85}
                 priority={idx === 0}
+                onLoad={() => setLoadedSet(prev => new Set([...prev, idx]))}
               />
               <span className="sr-only">Contact us about {deal.name}</span>
             </Link>

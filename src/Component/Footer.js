@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
+import { IconFacebook, IconInstagram, IconTwitter, IconLinkedIn, IconYouTube, IconPhone, IconEnvelope, IconMapMarker, IconClock } from '@/Component/Icons';
 
 const footerImages = [
   '/background/background10.jpg',
@@ -34,17 +34,19 @@ export default function Footer() {
           >
             <Image
               src={img}
-              alt={`Iris Eagle showcase ${idx + 1}`}
+              alt={`Iriseagle showcase ${idx + 1}`}
               fill
               className="object-cover"
               sizes="100vw"
+              loading="lazy"
+              quality={50}
             />
           </div>
         ))}
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
           <div className="text-center">
             <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-wide">
-              IRIS <span className="text-red-500">EAGLE</span>
+              IRISE<span className="text-red-500">EAGLE</span>
             </h2>
             <p className="text-gray-200 text-xs xs:text-sm sm:text-base mt-2">Nigeria&apos;s Premier Luxury Car Dealership</p>
           </div>
@@ -66,18 +68,18 @@ export default function Footer() {
           {/* Brand & Social */}
           <div className="flex flex-col gap-3 sm:gap-4 col-span-2 lg:col-span-1 items-center sm:items-start text-center sm:text-left">
             <div className="flex items-center gap-2 mb-1 sm:mb-2">
-              <span className="text-xl sm:text-2xl font-bold text-red-500 tracking-widest">IRIS</span>
+              <span className="text-xl sm:text-2xl font-bold text-red-500 tracking-widest">IRISE</span>
               <span className="text-base sm:text-lg font-semibold text-white">EAGLE</span>
             </div>
             <p className="text-xs sm:text-sm text-gray-400 max-w-xs mb-2">
-              Premium luxury vehicles, exceptional service, and unmatched trust. Your journey to excellence starts with Iris Eagle.
+              Premium luxury vehicles, exceptional service, and unmatched trust. Your journey to excellence starts with Iriseagle.
             </p>
             <div className="flex gap-2 sm:gap-3 mt-1 sm:mt-2 flex-wrap justify-center sm:justify-start">
-              <a href="#" aria-label="Facebook" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><FaFacebookF size={14} /></a>
-              <a href="#" aria-label="Instagram" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><FaInstagram size={14} /></a>
-              <a href="#" aria-label="Twitter" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><FaTwitter size={14} /></a>
-              <a href="#" aria-label="LinkedIn" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><FaLinkedinIn size={14} /></a>
-              <a href="#" aria-label="YouTube" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><FaYoutube size={14} /></a>
+              <a href="#" aria-label="Facebook" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><IconFacebook /></a>
+              <a href="#" aria-label="Instagram" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><IconInstagram /></a>
+              <a href="#" aria-label="Twitter" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><IconTwitter /></a>
+              <a href="#" aria-label="LinkedIn" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><IconLinkedIn /></a>
+              <a href="#" aria-label="YouTube" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><IconYouTube /></a>
             </div>
           </div>
 
@@ -134,19 +136,19 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-gray-400">
               <li className="flex items-start gap-2">
-                <FaMapMarkerAlt className="text-red-500 mt-0.5 shrink-0" />
+                <IconMapMarker className="w-4 h-4 text-red-500 mt-0.5 shrink-0" />
                 <span>123 Main Street, Lagos, Nigeria</span>
               </li>
               <li className="flex items-center gap-2">
-                <FaPhoneAlt className="text-red-500 shrink-0" />
+                <IconPhone className="w-4 h-4 text-red-500 shrink-0" />
                 <span>+234 800 123 4567</span>
               </li>
               <li className="flex items-center gap-2">
-                <FaEnvelope className="text-red-500 shrink-0" />
+                <IconEnvelope className="w-4 h-4 text-red-500 shrink-0" />
                 <span>info@iriseagle.com</span>
               </li>
               <li className="flex items-center gap-2">
-                <FaClock className="text-red-500 shrink-0" />
+                <IconClock className="w-4 h-4 text-red-500 shrink-0" />
                 <span>Mon - Sat: 8am - 6pm</span>
               </li>
             </ul>
@@ -155,7 +157,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between pt-4 sm:pt-6 text-[10px] sm:text-xs text-gray-500 gap-2 sm:gap-0">
-          <span className="text-center">&copy; {new Date().getFullYear()} Iris Eagle. All rights reserved.</span>
+          <span className="text-center">&copy; {new Date().getFullYear()} Iriseagle. All rights reserved.</span>
           <div className="flex flex-wrap gap-3 sm:gap-4 mt-1 sm:mt-0 justify-center">
             <a href="#" className="hover:text-red-400 transition">Privacy Policy</a>
             <a href="#" className="hover:text-red-400 transition">Terms of Service</a>

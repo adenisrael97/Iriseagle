@@ -1,3 +1,5 @@
+"use client";
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -34,7 +36,7 @@ const carCategories = [
     name: 'Bus',
     images: [
       '/Bus/Toyota Coaster 2023.jpeg',
-      '/Bus/Toyota Hiace 2024.webp',
+      '/Bus/Toyota Hiace 2025.jpeg',
     ],
   },
   {
@@ -47,6 +49,7 @@ const carCategories = [
 ];
 
 export default function FeaturedCar() {
+  const [loadedSet, setLoadedSet] = useState(new Set());
   return (
     <div className="px-4 py-8 max-w-7xl mx-auto">
       <h1 className="text-2xl md:text-4xl font-bold text-center mb-2 text-gray-900">Luxury Car Dealers in Nigeria</h1>
@@ -62,13 +65,18 @@ export default function FeaturedCar() {
                 className="bg-white rounded-xl shadow-md flex flex-col items-center p-4 hover:shadow-lg transition-shadow duration-200"
               >
                 <Link href="/contact" className="w-full h-48 relative mb-4 block group focus:outline-none focus:ring-2 focus:ring-red-600">
+                  {!loadedSet.has(`${category.name}-${idx}`) && (
+                    <div className="absolute inset-0 z-10 rounded-lg bg-gray-200 animate-pulse" />
+                  )}
                   <Image
                     src={img}
                     alt={carName || category.name}
                     fill
                     className="object-cover rounded-lg group-hover:opacity-90 transition-opacity duration-200"
                     sizes="(max-width: 768px) 100vw, 33vw"
+                    quality={85}
                     priority={idx === 0 && category.name === 'Toyota'}
+                    onLoad={() => setLoadedSet(prev => new Set([...prev, `${category.name}-${idx}`]))}
                   />
                   <span className="sr-only">Contact us about {carName || category.name}</span>
                 </Link>

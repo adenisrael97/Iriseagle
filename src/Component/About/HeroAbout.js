@@ -23,6 +23,8 @@ export default function HeroAbout() {
           fill
           className="object-cover object-center w-full h-full opacity-80"
           priority
+          quality={60}
+          sizes="100vw"
         />
         <div className="absolute inset-0" />
       </div>

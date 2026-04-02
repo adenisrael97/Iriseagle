@@ -43,6 +43,29 @@ const blogData = {
   },
 };
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const blog = blogData[slug];
+  if (!blog) return { title: "Blog Not Found" };
+  return {
+    title: blog.title,
+    description: blog.content.slice(0, 155).replace(/\n/g, " "),
+    alternates: { canonical: `https://iriseagle.com/showroom/blog/${slug}` },
+    openGraph: {
+      title: `${blog.title} | Iriseagle Blog`,
+      description: blog.content.slice(0, 155).replace(/\n/g, " "),
+      url: `https://iriseagle.com/showroom/blog/${slug}`,
+      images: blog.images.map((img) => ({ url: img, width: 800, height: 600, alt: blog.title })),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: blog.title,
+      description: blog.content.slice(0, 155).replace(/\n/g, " "),
+      images: [blog.images[0]],
+    },
+  };
+}
+
 export default async function BlogDetailPage({ params }) {
   const { slug } = await params;
   const blog = blogData[slug] || null;

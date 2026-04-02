@@ -147,13 +147,13 @@ export default function OurVehicles() {
                 onClick={() => setSelectedCar(img)}
                 className="cursor-pointer group"
               >
-                <div className="w-full h-55 overflow-hidden rounded-lg bg-gray-100 border border-gray-300 group-hover:border-red-600 transition">
+                <div className="relative w-full h-55 overflow-hidden rounded-lg bg-gray-100 border border-gray-300 group-hover:border-red-600 transition">
                   <Image
                     src={img.src}
                     alt={img.name}
-                    width={320}
-                    height={220}
-                    className="object-cover w-full h-full group-hover:scale-105 transition"
+                    fill
+                    className="object-cover group-hover:scale-105 transition"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
                 <p className="text-center mt-2 text-gray-700 group-hover:text-red-600 font-medium">
@@ -211,13 +211,13 @@ export default function OurVehicles() {
               ✕
             </button>
 
-            <div className="w-full h-75 mb-4">
+            <div className="relative w-full h-75 mb-4">
               <Image
                 src={selectedCar.src}
                 alt={selectedCar.name}
-                width={500}
-                height={300}
-                className="object-cover w-full h-full rounded-lg border border-gray-300"
+                fill
+                className="object-cover rounded-lg border border-gray-300"
+                sizes="(max-width: 768px) 90vw, 512px"
               />
             </div>
 

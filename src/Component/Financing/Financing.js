@@ -31,7 +31,7 @@ export default function FinancingPage() {
 				<div className="absolute inset-0 bg-black/10" />
 			</div>
 
-			<section className="max-w-6xl mx-auto text-center mb-12">
+		<section className="max-w-6xl mx-auto text-center mb-12 px-4">
 				<h1 className="text-4xl md:text-5xl font-extrabold text-red-700 mb-4">
 					Financing
 				</h1>
@@ -42,7 +42,7 @@ export default function FinancingPage() {
 				</p>
 			</section>
 
-			<section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+		<section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 px-4">
 				{plans.map((plan) => (
 					<article
 						key={plan.title}
@@ -56,7 +56,7 @@ export default function FinancingPage() {
 				))}
 			</section>
 
-			<section className="max-w-3xl mx-auto bg-white rounded-xl shadow p-8 text-center">
+		<section className="max-w-3xl mx-4 sm:mx-auto bg-white rounded-xl shadow p-4 sm:p-8 text-center">
 				<h3 className="text-2xl font-bold text-red-700 mb-3">
 					Need a custom plan?
 				</h3>

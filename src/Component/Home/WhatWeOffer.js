@@ -1,35 +1,35 @@
 "use client";
 import Image from 'next/image';
-import { FaCar, FaTools, FaShieldAlt, FaMoneyBillWave, FaShippingFast, FaHeadset } from 'react-icons/fa';
+import { IconCar, IconTools, IconShield, IconMoney, IconTruck, IconHeadset } from '@/Component/Icons';
 
 const services = [
   {
-    icon: FaCar,
+    icon: IconCar,
     title: 'Premium Vehicle Sales',
     description: 'Access an exclusive collection of luxury vehicles from world-renowned brands. Each car is carefully selected to meet the highest standards of quality and performance.',
   },
   {
-    icon: FaTools,
+    icon: IconTools,
     title: 'Expert Maintenance & Repair',
     description: 'Our certified technicians provide comprehensive maintenance and repair services using genuine parts and state-of-the-art equipment to keep your vehicle in perfect condition.',
   },
   {
-    icon: FaShieldAlt,
+    icon: IconShield,
     title: 'Extended Warranty Coverage',
     description: 'Drive with confidence knowing your investment is protected. We offer comprehensive warranty packages that cover major components and provide peace of mind.',
   },
   {
-    icon: FaMoneyBillWave,
+    icon: IconMoney,
     title: 'Flexible Financing Options',
     description: 'Make your dream car affordable with our flexible financing solutions. We work with leading financial institutions to offer competitive rates and personalized payment plans.',
   },
   {
-    icon: FaShippingFast,
+    icon: IconTruck,
     title: 'Nationwide Delivery',
     description: 'Wherever you are in Nigeria, we deliver. Our professional logistics team ensures your vehicle arrives safely and on time, right to your doorstep.',
   },
   {
-    icon: FaHeadset,
+    icon: IconHeadset,
     title: '24/7 Customer Support',
     description: 'Our dedicated support team is always available to assist you. From pre-purchase consultation to after-sales service, we&apos;re here for you every step of the way.',
   },
@@ -37,7 +37,7 @@ const services = [
 
 export default function WhatWeOffer() {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
+    <div className="relative w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -45,10 +45,8 @@ export default function WhatWeOffer() {
           alt="Background"
           fill
           className="object-cover"
-          priority
-          quality={60}
-          placeholder="blur"
-          blurDataURL="/background/background3-blur.jpg"
+          loading="lazy"
+          quality={85}
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/60" />
