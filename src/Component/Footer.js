@@ -139,7 +139,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-400">
               <li className="flex items-start gap-2">
                 <IconMapMarker className="w-4 h-4 text-red-500 mt-0.5 shrink-0" />
-                <span>123 Main Street, Lagos, Nigeria</span>
+                <span>Flat 2, jibia street, Area 2, Abuja.</span>
               </li>
               <li className="flex items-center gap-2">
                 <IconPhone className="w-4 h-4 text-red-500 shrink-0" />
