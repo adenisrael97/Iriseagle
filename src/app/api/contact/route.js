@@ -29,7 +29,7 @@ export async function POST(request) {
     const waText = encodeURIComponent(
       `Hi Iriseagle, my name is ${name.trim()}. ${message.trim()}`
     );
-    const waLink = `https://wa.me/2348054029416?text=${waText}`;
+    const waLink = `https://wa.me/2348166576670?text=${waText}`;
 
     return NextResponse.json({ success: true, waLink }, { status: 200 });
   } catch {

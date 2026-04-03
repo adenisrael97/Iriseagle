@@ -78,7 +78,7 @@ const jsonLd = {
     "@type": "PostalAddress",
     addressCountry: "NG",
   },
-  telephone: "+2348054029416",
+  telephone: "+2348166576670",
   openingHours: "Mo-Sa 08:00-18:00",
   priceRange: "₦₦₦",
   sameAs: [],
@@ -104,7 +104,7 @@ export default function RootLayout({ children }) {
         <Footer />
         {/* Sticky WhatsApp Button — visible on every page */}
         <a
-          href="https://wa.me/2348054029416"
+          href="https://wa.me/2348166576670"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed z-50 bottom-6 right-6 md:bottom-8 md:right-8 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-xl flex items-center justify-center p-4 transition-colors"

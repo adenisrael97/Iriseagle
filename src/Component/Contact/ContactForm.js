@@ -184,7 +184,7 @@ export default function ContactForm() {
         </div>
         <div>
           <p className="font-semibold text-gray-800">Phone</p>
-          <a href="tel:+2348054029416" className="hover:text-red-600 transition">
+          <a href="tel:+2348166576670" className="hover:text-red-600 transition">
             +234 805 402 9416
           </a>
         </div>
@@ -197,7 +197,7 @@ export default function ContactForm() {
       {/* WhatsApp */}
       <div className="mt-6 flex justify-center">
         <a
-          href="https://wa.me/2348054029416"
+          href="https://wa.me/2348166576670"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 px-5 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow transition-colors duration-200"

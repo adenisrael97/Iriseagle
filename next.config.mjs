@@ -12,14 +12,7 @@ const nextConfig = {
     minimumCacheTTL: 2592000,
   },
   async headers() {
-    return [
-      {
-        // Next.js hashed static chunks — safe to cache forever (content-hashed filenames)
-        source: '/_next/static/:path*',
-        headers: [
-          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
-        ],
-      },
+    const headers = [
       {
         // Public image/font assets
         source: '/:path*\\.(jpg|jpeg|png|webp|avif|gif|svg|ico|woff|woff2)',
@@ -28,6 +21,18 @@ const nextConfig = {
         ],
       },
     ];
+
+    if (process.env.NODE_ENV === 'production') {
+      headers.unshift({
+        // Next.js hashed static chunks — safe to cache forever (content-hashed filenames)
+        source: '/_next/static/:path*',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+        ],
+      });
+    }
+
+    return headers;
   },
 };
 

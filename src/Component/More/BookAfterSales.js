@@ -73,7 +73,7 @@ export default function BookAfterSales() {
         </form>
         <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md mx-auto justify-center">
           <a
-            href="https://wa.me/2348054029416"
+            href="https://wa.me/2348166576670"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 flex items-center justify-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow hover:bg-green-700 transition-colors duration-200 text-lg mb-2 sm:mb-0"

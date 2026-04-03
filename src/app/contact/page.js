@@ -44,7 +44,7 @@ export default function ContactPage() {
         <p className="text-gray-700 text-lg font-semibold">Follow us</p>
         <div className="flex items-center gap-4">
           <a
-            href="https://instagram.com/iriseagle"
+            href="https://www.instagram.com/irisautomobile1?igsh=MTAwcHF0ZG5yNGUxeA=="
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -53,7 +53,7 @@ export default function ContactPage() {
             <IconInstagram className="w-5 h-5" />
           </a>
           <a
-            href="https://facebook.com/iriseagle"
+            href="https://www.facebook.com/profile.php?id=61559248825684&_rdc=1&_rdr#"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"

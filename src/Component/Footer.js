@@ -75,8 +75,8 @@ export default function Footer() {
               Premium luxury vehicles, exceptional service, and unmatched trust. Your journey to excellence starts with Iriseagle.
             </p>
             <div className="flex gap-2 sm:gap-3 mt-1 sm:mt-2 flex-wrap justify-center sm:justify-start">
-              <a href="#" aria-label="Facebook" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><IconFacebook /></a>
-              <a href="#" aria-label="Instagram" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><IconInstagram /></a>
+              <a href="https://www.facebook.com/profile.php?id=61559248825684&_rdc=1&_rdr#" aria-label="Facebook" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><IconFacebook /></a>
+              <a href="https://www.instagram.com/irisautomobile1?igsh=MTAwcHF0ZG5yNGUxeA==" aria-label="Instagram" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><IconInstagram /></a>
               <a href="#" aria-label="Twitter" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><IconTwitter /></a>
               <a href="#" aria-label="LinkedIn" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><IconLinkedIn /></a>
               <a href="#" aria-label="YouTube" className="bg-gray-800 hover:bg-red-600 p-1.5 sm:p-2 rounded-full transition-colors"><IconYouTube /></a>
