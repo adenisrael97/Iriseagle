@@ -38,9 +38,9 @@ export default function About() {
             </p>
           </div>
 
-          <Link href="/about" className="inline-block mt-8">
+          <Link href="/showroom/our-vehicles" className="inline-block mt-8">
             <button className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-3 rounded-md text-base md:text-lg transition-colors shadow-lg">
-              More about us
+              View Inventory
             </button>
           </Link>
         </div>
