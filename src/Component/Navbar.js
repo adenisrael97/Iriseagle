@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { IconCar, IconPhone, IconEnvelope, IconBars, IconTimes } from "@/Component/Icons";
+import { IconPhone, IconEnvelope, IconBars, IconTimes } from "@/Component/Icons";
 
 /* ============================================================
    NAVIGATION LINKS
@@ -110,9 +111,16 @@ export default function Navbar() {
 
             {/* ===== LOGO ===== */}
             <Link href="/" className="flex items-center gap-3 group">
-              {/* Logo Icon */}
-              <div className="w-11 h-11 bg-linear-to-br from-red-600 to-red-700 rounded-xl flex items-center justify-center group-hover:from-red-700 group-hover:to-red-800 transition-all duration-300 shadow-sm group-hover:shadow-md">
-                <IconCar className="w-6 h-6 text-white" />
+              {/* Logo Image */}
+              <div className="relative w-11 h-11 rounded-xl overflow-hidden ring-1 ring-gray-200 shadow-sm group-hover:shadow-md transition-all duration-300 bg-white">
+                <Image
+                  src="/Logo/WhatsApp%20Image%202026-03-27%20at%2018.28.53.jpeg"
+                  alt="Iriseagle logo"
+                  fill
+                  sizes="44px"
+                  className="object-cover"
+                  priority
+                />
               </div>
               {/* Logo Text */}
               <div className="flex flex-col">

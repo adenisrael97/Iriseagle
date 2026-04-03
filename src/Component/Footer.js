@@ -67,10 +67,16 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 md:gap-10 border-b border-gray-700 pb-6 sm:pb-8 md:pb-10">
           {/* Brand & Social */}
           <div className="flex flex-col gap-3 sm:gap-4 col-span-2 lg:col-span-1 items-center sm:items-start text-center sm:text-left">
-            <div className="flex items-center gap-2 mb-1 sm:mb-2">
-              <span className="text-xl sm:text-2xl font-bold text-red-500 tracking-widest">IRISE</span>
-              <span className="text-base sm:text-lg font-semibold text-white">EAGLE</span>
-            </div>
+            <Link href="/" aria-label="Iriseagle home" className="relative w-28 h-10 sm:w-32 sm:h-11 mb-1 sm:mb-2 rounded-md overflow-hidden bg-white/95">
+              <Image
+                src="/Logo/WhatsApp%20Image%202026-03-27%20at%2018.28.53.jpeg"
+                alt="Iriseagle logo"
+                fill
+                sizes="(max-width: 640px) 112px, 128px"
+                className="object-contain"
+                loading="lazy"
+              />
+            </Link>
             <p className="text-xs sm:text-sm text-gray-400 max-w-xs mb-2">
               Premium luxury vehicles, exceptional service, and unmatched trust. Your journey to excellence starts with Iriseagle.
             </p>
