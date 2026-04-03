@@ -38,7 +38,7 @@ export default function Footer() {
               fill
               className="object-cover"
               sizes="100vw"
-              loading="lazy"
+              loading={idx === 0 ? "eager" : "lazy"}
               quality={50}
             />
           </div>
