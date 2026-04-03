@@ -90,11 +90,9 @@ export default function Footer() {
               <span className="block w-8 h-0.5 bg-red-500 mt-1" />
             </h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/Inventory" className="hover:text-red-400 transition">Car Sales</Link></li>
-              <li><Link href="/service" className="hover:text-red-400 transition">Maintenance &amp; Repairs</Link></li>
+              <li><Link href="/showroom/our-vehicles" className="hover:text-red-400 transition">Car Sales</Link></li>
+              <li><Link href="/more/book-after-sales" className="hover:text-red-400 transition">Maintenance &amp; Repairs</Link></li>
               <li><Link href="/financing" className="hover:text-red-400 transition">Financing</Link></li>
-              <li><Link href="/sell-trade" className="hover:text-red-400 transition">Sell / Trade-In</Link></li>
-              <li><Link href="/service" className="hover:text-red-400 transition">Vehicle Detailing</Link></li>
             </ul>
           </div>
 
@@ -106,10 +104,10 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/contact" className="hover:text-red-400 transition">Contact Us</Link></li>
-              <li><a href="#" className="hover:text-red-400 transition">FAQs</a></li>
-              <li><a href="#" className="hover:text-red-400 transition">Warranty</a></li>
-              <li><a href="#" className="hover:text-red-400 transition">Customer Support</a></li>
-              <li><a href="#" className="hover:text-red-400 transition">After-Sales Service</a></li>
+              <li><Link href="/more" className="hover:text-red-400 transition">FAQs</Link></li>
+              <li><Link href="/more/book-after-sales" className="hover:text-red-400 transition">Warranty</Link></li>
+              <li><Link href="/contact" className="hover:text-red-400 transition">Customer Support</Link></li>
+              <li><Link href="/more/book-after-sales" className="hover:text-red-400 transition">After-Sales Service</Link></li>
             </ul>
           </div>
 
@@ -121,10 +119,8 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/about" className="hover:text-red-400 transition">About Us</Link></li>
-              <li><a href="#" className="hover:text-red-400 transition">Our Team</a></li>
-              <li><a href="#" className="hover:text-red-400 transition">Careers</a></li>
-              <li><a href="#" className="hover:text-red-400 transition">Testimonials</a></li>
-              <li><a href="#" className="hover:text-red-400 transition">Blog</a></li>
+              <li><Link href="/about" className="hover:text-red-400 transition">Our Team</Link></li>
+              <li><Link href="/showroom/blog" className="hover:text-red-400 transition">Blog</Link></li>
             </ul>
           </div>
 
@@ -159,9 +155,9 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between pt-4 sm:pt-6 text-[10px] sm:text-xs text-gray-500 gap-2 sm:gap-0">
           <span className="text-center">&copy; {new Date().getFullYear()} Iriseagle. All rights reserved.</span>
           <div className="flex flex-wrap gap-3 sm:gap-4 mt-1 sm:mt-0 justify-center">
-            <a href="#" className="hover:text-red-400 transition">Privacy Policy</a>
-            <a href="#" className="hover:text-red-400 transition">Terms of Service</a>
-            <a href="#" className="hover:text-red-400 transition">Sitemap</a>
+            <Link href="/about" className="hover:text-red-400 transition">Privacy Policy</Link>
+            <Link href="/about" className="hover:text-red-400 transition">Terms of Service</Link>
+            <Link href="/sitemap.xml" className="hover:text-red-400 transition">Sitemap</Link>
           </div>
         </div>
       </div>
