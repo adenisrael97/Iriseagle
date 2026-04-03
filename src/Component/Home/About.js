@@ -24,37 +24,17 @@ export default function About() {
           <div className="text-gray-700 space-y-4 text-sm xs:text-base md:text-lg leading-relaxed">
             <p>
               Welcome to <span className="font-semibold text-red-600">Iris Eagle</span>, Nigeria&apos;s premier luxury automotive dealership. 
-              With decades of experience and a commitment to excellence, we have established ourselves as the most trusted 
-              name in luxury vehicle sales and service across the nation.
+              With years of experience and a commitment to excellence, we offer an exclusive collection of the world&apos;s finest automobiles.
             </p>
             
             <p>
-              At Iris Eagle, we understand that purchasing a vehicle is more than just a transaction—it&apos;s an investment 
-              in your lifestyle, comfort, and status. That&apos;s why we offer an exclusive collection of the world&apos;s 
-              finest automobiles, including premium brands like Toyota, Mercedes-Benz, BMW, Lexus, and cutting-edge electric vehicles.
-            </p>
-            
-            <p>
-              Our state-of-the-art showrooms across Nigeria showcase the latest models, from elegant sedans and powerful SUVs 
-              to spacious luxury buses perfect for corporate and personal use. Each vehicle in our inventory is meticulously 
-              inspected, certified, and backed by comprehensive warranty coverage to ensure your complete satisfaction.
-            </p>
-            
-            <p>
-              What sets Iris Eagle apart is our unwavering dedication to customer service. Our team of automotive experts 
-              provides personalized consultation to help you find the perfect vehicle that matches your needs, preferences, 
-              and budget. We offer flexible financing options, competitive pricing, and exclusive deals that make luxury 
-              vehicle ownership more accessible than ever.
-            </p>
-            
-            <p>
-              Beyond sales, Iris Eagle is your partner for life. Our certified service centers employ factory-trained 
-              technicians using genuine parts and advanced diagnostic equipment. From routine maintenance to complex repairs, 
-              we ensure your vehicle performs at its peak for years to come.
+              We provide personalized consultation, flexible financing, and exceptional after-sales service. Our state-of-the-art 
+              showrooms showcase the latest luxury models from Toyota, Mercedes-Benz, BMW, Lexus, and electric vehicles—all 
+              meticulously inspected and backed by comprehensive warranty coverage.
             </p>
             
             <p className="font-semibold text-gray-900">
-              Choose Iris Eagle and experience the pinnacle of luxury automotive excellence. Your dream car awaits.
+              At Iris Eagle, we are your partner for luxury automotive excellence. Discover your dream car today.
             </p>
           </div>
 
