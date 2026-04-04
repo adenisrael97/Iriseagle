@@ -98,7 +98,7 @@ export default function OurVehicles() {
       {/* HERO */}
       <section className="relative w-full min-h-[60vh] flex items-center justify-center px-4">
         <div className="absolute inset-0">
-          <Image src="/background/background17.jpg" alt="bg" fill className="object-cover opacity-80" />
+          <Image src="/background/background17.jpg" alt="bg" fill className="object-cover opacity-80" loading="eager" priority sizes="100vw" />
           <div className="absolute inset-0 bg-gray-900/70" />
         </div>
 

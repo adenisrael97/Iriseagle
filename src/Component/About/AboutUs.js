@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutUs() {
   return (
@@ -55,9 +56,9 @@ export default function AboutUs() {
 
       {/* Button */}
       <div className="my-8 flex justify-center">
-        <button className="px-10 py-4 bg-red-700 text-white rounded-full font-semibold shadow-lg hover:bg-red-800 transition-colors duration-200 text-lg">
-          Learn More
-        </button>
+        <Link href="/showroom/our-vehicles" className="px-10 py-4 bg-red-700 text-white rounded-full font-semibold shadow-lg hover:bg-red-800 transition-colors duration-200 text-lg">
+          View Inventory
+        </Link>
       </div>
 
       {/* Mission & Cofounder */}

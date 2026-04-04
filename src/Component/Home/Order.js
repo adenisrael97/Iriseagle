@@ -13,7 +13,8 @@ export default function Order() {
           alt="Background"
           fill
           className="object-cover"
-          loading="lazy"
+          loading="eager"
+          priority
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/40" />
