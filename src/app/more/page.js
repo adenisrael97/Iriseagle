@@ -1,4 +1,4 @@
-import PreOrder from "@/Component/More/PreOrder";
+import PreOrder from "@/components/sections/more/PreOrder";
 
 export default function PreOrderPage() {
   return (

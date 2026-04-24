@@ -1,4 +1,4 @@
-import OurVehicles from "@/Component/Showroom/OurVehicles";
+import OurVehicles from "@/components/sections/showroom/OurVehicles";
 
 export const metadata = {
   title: "Our Vehicles",

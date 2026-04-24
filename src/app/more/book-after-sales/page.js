@@ -1,4 +1,4 @@
-import BookAfterSales from "@/Component/More/BookAfterSales";
+import BookAfterSales from "@/components/sections/more/BookAfterSales";
 
 export const metadata = {
   title: "Book After-Sales Service",

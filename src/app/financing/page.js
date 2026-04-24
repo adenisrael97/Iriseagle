@@ -1,4 +1,4 @@
-import FinancingPage from "@/Component/Financing/Financing";
+import FinancingPage from "@/components/sections/financing/Financing";
 
 export const metadata = {
   title: "Financing",

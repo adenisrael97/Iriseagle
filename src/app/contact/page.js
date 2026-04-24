@@ -1,6 +1,6 @@
 import Image from "next/image";
-import ContactForm from "@/Component/Contact/ContactForm";
-import { IconInstagram, IconFacebook } from "@/Component/Icons";
+import ContactForm from "@/components/sections/contact/ContactForm";
+import { IconInstagram, IconFacebook } from "@/components/ui/Icons";
 
 export const metadata = {
   title: "Contact Us",

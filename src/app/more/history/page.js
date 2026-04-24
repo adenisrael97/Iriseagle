@@ -1,4 +1,4 @@
-import History from "@/Component/More/History";
+import History from "@/components/sections/more/History";
 
 export const metadata = {
   title: "Our History",

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "@/components/ui/Button";
 
 const blogData = {
   toyota: {
@@ -116,7 +117,9 @@ export default async function BlogDetailPage({ params }) {
           <h2 className="text-2xl font-bold text-white mb-2">Ready to Experience {blog.title.split(":")[0]}?</h2>
           <p className="text-white/90 mb-2">Contact our team for a test drive, personalized consultation, or to learn more about the latest models and offers. Your journey to excellence starts here.</p>
         </div>
-        <a href="/contact" className="px-8 py-3 bg-white text-red-700 rounded-lg font-bold shadow hover:bg-red-100 transition-colors duration-200 text-lg text-center">Contact Us</a>
+        <Button href="/contact" variant="secondary" size="lg">
+          Contact Us
+        </Button>
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-import Blog from "@/Component/Blog/Blog";
+import Blog from "@/components/sections/blog/Blog";
 
 export const metadata = {
   title: "Blog",

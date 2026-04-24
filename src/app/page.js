@@ -1,10 +1,10 @@
-import Hero from "@/Component/Home/Hero";
-import FeaturedCar from "@/Component/Home/FeaturedCar";
-import NewVehicle from "@/Component/Home/NewVehicle";
-import NewDeal from "@/Component/Home/NewDeal";
-import Order from "@/Component/Home/Order";
-import About from "@/Component/Home/About";
-import WhatWeOffer from "@/Component/Home/WhatWeOffer";
+import Hero from "@/components/sections/home/Hero";
+import FeaturedCar from "@/components/sections/home/FeaturedCar";
+import NewVehicle from "@/components/sections/home/NewVehicle";
+import NewDeal from "@/components/sections/home/NewDeal";
+import Order from "@/components/sections/home/Order";
+import About from "@/components/sections/home/About";
+import WhatWeOffer from "@/components/sections/home/WhatWeOffer";
 
 export const metadata = {
   title: "Iriseagle | Nigeria's Premier Luxury Car Dealership",

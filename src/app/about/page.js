@@ -1,6 +1,6 @@
-import AboutUs from "@/Component/About/AboutUs";
-import HeroAbout from "@/Component/About/HeroAbout";
-import OurMission from "@/Component/About/OurMission";
+import AboutUs from "@/components/sections/about/AboutUs";
+import HeroAbout from "@/components/sections/about/HeroAbout";
+import OurMission from "@/components/sections/about/OurMission";
 
 export const metadata = {
   title: "About Us",

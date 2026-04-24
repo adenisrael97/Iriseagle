@@ -1,4 +1,4 @@
-import LatestCar from "@/Component/Showroom/LatestCar";
+import LatestCar from "@/components/sections/showroom/LatestCar";
 
 export const metadata = {
   title: "Latest 2026 Vehicles",
