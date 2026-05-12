@@ -143,7 +143,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <IconPhone className="w-4 h-4 text-red-500 shrink-0" />
-                <span>+234 800 123 4567</span>
+                <span>+234 816 657 6670</span>
               </li>
               <li className="flex items-center gap-2">
                 <IconEnvelope className="w-4 h-4 text-red-500 shrink-0" />

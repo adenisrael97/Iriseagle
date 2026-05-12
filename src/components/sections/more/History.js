@@ -35,7 +35,7 @@ export default function ShowroomHistory() {
       <PageHero
         image="/Ceo/CEO.jpg"
         imageAlt="Iris Eagle History"
-        title="Iris Eagle History"
+        // title="Iris Eagle History"
         height="xl"
         overlay="medium"
       />

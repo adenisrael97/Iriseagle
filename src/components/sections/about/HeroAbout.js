@@ -16,7 +16,7 @@ export default function HeroAbout() {
     <section className="relative w-full min-h-[70vh] flex items-center justify-center py-8 px-2 md:px-8">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/Background/background9.jpg"
+          src="/background/background9.jpg"
           alt="Iris Eagle Background"
           fill
           className="object-cover object-center w-full h-full opacity-80"

@@ -17,7 +17,7 @@ const vehicles2026 = [
   { src: "/Electric/Toyota bZ 2026.avif", name: "Toyota bZ 2026", desc: "Go green with the all-electric 2026 Toyota bZ." },
   { src: "/Electric/Toyota bZ3 2026.jpeg", name: "Toyota bZ3 2026", desc: "Electric innovation: the 2026 Toyota bZ3." },
   { src: "/Bus/Toyota Coaster 2026.webp", name: "Toyota Coaster 2026", desc: "Travel together in comfort: the 2026 Coaster." },
-  { src: "/Bus/Toyota Coaster 2026.webp", name: "Toyota Coaster 2026", desc: "Efficient and modern: the 2026 Coaster." },
+  { src: "/Bus/Toyota hiace 2025.jpeg", name: "Toyota Coaster 2026", desc: "Efficient and modern: the 2026 Coaster." },
   { src: "/Bmw/Bmw 7 series 2026.jpg", name: "BMW 7 Series 2026", desc: "The pinnacle of luxury: the 2026 BMW 7 Series." },
   { src: "/Bmw/Bmw X6 2026.jpeg", name: "BMW X6 2026", desc: "Sporty and bold: the 2026 BMW X6." },
 ];
