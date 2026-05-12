@@ -13,7 +13,7 @@ import Input, { Field, Textarea } from "@/components/ui/Input";
 const INITIAL = { name: "", email: "", phone: "", message: "" };
 
 const contactDetails = [
-  { label: "Email", value: "info@iriseagle.com", href: "mailto:info@iriseagle.com" },
+  { label: "Email", value: "info@iriseaglelimited.com", href: "mailto:info@iriseaglelimited.com" },
   { label: "Phone", value: "+234 805 402 9416", href: "tel:+2348166576670" },
   { label: "Address", value: "Flat 2 Jibia Street, Area 2, Abuja" },
 ];

@@ -57,13 +57,13 @@ function CarTile({ img, onOpen }) {
       className="cursor-pointer group text-left"
       onClick={() => onOpen(img)}
     >
-      <div className="w-full h-55 overflow-hidden rounded-lg">
+      <div className="relative w-full h-55 overflow-hidden rounded-lg">
         <Image
           src={img.src}
           alt={img.name}
-          width={320}
-          height={220}
-          className="object-cover w-full h-full group-hover:scale-105 transition"
+          fill
+          className="object-cover group-hover:scale-105 transition"
+          sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
         />
       </div>
       <p className="text-center mt-2 text-gray-700 group-hover:text-blue-600">
@@ -85,13 +85,13 @@ function CarModal({ car, onClose }) {
         >
           ✕
         </button>
-        <div className="w-full h-75 mb-4">
+        <div className="relative w-full h-75 mb-4">
           <Image
             src={car.src}
             alt={car.name}
-            width={500}
-            height={300}
-            className="object-cover w-full h-full rounded-lg"
+            fill
+            className="object-cover rounded-lg"
+            sizes="(max-width: 768px) 90vw, 500px"
           />
         </div>
         <h2 className="text-xl font-bold mb-2">{car.name}</h2>

@@ -69,7 +69,7 @@ export default function Footer() {
           <div className="flex flex-col gap-3 sm:gap-4 col-span-2 lg:col-span-1 items-center sm:items-start text-center sm:text-left">
             <Link href="/" aria-label="Iriseagle home" className="relative w-28 h-10 sm:w-32 sm:h-11 mb-1 sm:mb-2 rounded-md overflow-hidden bg-white/95">
               <Image
-                src="/Logo/WhatsApp%20Image%202026-03-27%20at%2018.28.53.jpeg"
+                src="/Logo/logo.jpeg"
                 alt="Iriseagle logo"
                 fill
                 sizes="(max-width: 640px) 112px, 128px"
@@ -147,7 +147,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <IconEnvelope className="w-4 h-4 text-red-500 shrink-0" />
-                <span>info@iriseagle.com</span>
+                <span>info@iriseaglelimited.com</span>
               </li>
               <li className="flex items-center gap-2">
                 <IconClock className="w-4 h-4 text-red-500 shrink-0" />

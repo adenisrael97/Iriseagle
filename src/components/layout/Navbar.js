@@ -43,7 +43,7 @@ const navLinks = [
    ============================================================ */
 const contactInfo = {
   phone: "+234 800 123 4567",
-  email: "info@iriseagle.com",
+  email: "info@iriseaglelimited.com",
 };
 
 /* ============================================================
@@ -115,7 +115,7 @@ export default function Navbar() {
               {/* Logo Image */}
               <div className="relative w-11 h-11 rounded-xl overflow-hidden ring-1 ring-gray-200 shadow-sm group-hover:shadow-md transition-all duration-300 bg-white">
                 <Image
-                  src="/Logo/WhatsApp%20Image%202026-03-27%20at%2018.28.53.jpeg"
+                  src="/Logo/logo.jpeg"
                   alt="Iriseagle logo"
                   fill
                   sizes="44px"

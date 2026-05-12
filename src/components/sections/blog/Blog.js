@@ -60,14 +60,15 @@ function BlogImagePair({ images }) {
   return (
     <div className="flex gap-3 mb-4">
       {images.map((img) => (
-        <Image
-          key={img.src}
-          src={img.src}
-          alt={img.alt}
-          width={120}
-          height={80}
-          className="rounded-lg object-cover"
-        />
+        <div key={img.src} className="relative w-30 h-20 shrink-0">
+          <Image
+            src={img.src}
+            alt={img.alt}
+            fill
+            className="rounded-lg object-cover"
+            sizes="120px"
+          />
+        </div>
       ))}
     </div>
   );
