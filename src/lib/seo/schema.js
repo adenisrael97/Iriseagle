@@ -666,6 +666,45 @@ export function articleSchema(article) {
   };
 }
 
+// ── ItemList (vehicle listing pages) ─────────────────────────
+
+export function itemListSchema(items, listName = "Vehicle Inventory") {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: listName,
+    url: `${SITE_URL}/showroom/our-vehicles`,
+    numberOfItems: items.length,
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      url: safeUrl(item.url),
+      ...(item.image && { image: safeUrl(item.image) }),
+    })),
+  };
+}
+
+// ── FinancialService (financing page) ────────────────────────
+
+export function financingServiceSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    name: `${SITE_CONFIG.name} — Vehicle Financing`,
+    url: `${SITE_URL}/financing`,
+    description:
+      "Flexible vehicle financing options in Nigeria. Competitive monthly payment plans for Toyota, Lexus, Mercedes-Benz, BMW and more.",
+    provider: { "@id": `${SITE_URL}/#organization` },
+    areaServed: { "@type": "Country", name: "Nigeria" },
+    availableChannel: {
+      "@type": "ServiceChannel",
+      serviceUrl: `${SITE_URL}/contact`,
+      servicePhone: SITE_CONFIG.phone,
+    },
+  };
+}
+
 // ── Root Schemas ──────────────────────────────────────────────
 
 export function rootSchemas() {
