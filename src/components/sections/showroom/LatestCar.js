@@ -54,19 +54,23 @@ function CarTile({ img, onOpen }) {
   return (
     <button
       type="button"
-      className="cursor-pointer group text-left"
+      className="cursor-pointer group text-left w-full"
       onClick={() => onOpen(img)}
     >
-      <div className="relative w-full h-55 overflow-hidden rounded-lg">
+      <div className="relative w-full h-56 sm:h-64 md:h-72 lg:h-80 overflow-hidden rounded-xl shadow-md group-hover:shadow-xl transition-shadow duration-300">
         <Image
           src={img.src}
           alt={img.name}
           fill
-          className="object-cover group-hover:scale-105 transition"
-          sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
+        <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
+        <div className="absolute bottom-0 left-0 right-0 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <p className="text-white text-sm font-semibold text-center">{img.name}</p>
+        </div>
       </div>
-      <p className="text-center mt-2 text-gray-700 group-hover:text-blue-600">
+      <p className="text-center mt-3 text-gray-700 group-hover:text-red-600 font-medium text-sm md:text-base transition-colors duration-200">
         {img.name}
       </p>
     </button>
@@ -77,25 +81,25 @@ function CarModal({ car, onClose }) {
   if (!car) return null;
   return (
     <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-4">
-      <div className="bg-white rounded-xl max-w-lg w-full p-4 relative">
+      <div className="bg-white rounded-2xl max-w-2xl w-full p-5 relative shadow-2xl">
         <button
           onClick={onClose}
-          className="absolute top-2 right-3 text-xl"
+          className="absolute top-3 right-4 text-2xl text-gray-400 hover:text-red-600 transition-colors"
           aria-label="Close modal"
         >
           ✕
         </button>
-        <div className="relative w-full h-75 mb-4">
+        <div className="relative w-full h-72 sm:h-96 mb-5 rounded-xl overflow-hidden">
           <Image
             src={car.src}
             alt={car.name}
             fill
-            className="object-cover rounded-lg"
-            sizes="(max-width: 768px) 90vw, 500px"
+            className="object-cover"
+            sizes="(max-width: 768px) 90vw, 672px"
           />
         </div>
-        <h2 className="text-xl font-bold mb-2">{car.name}</h2>
-        <p className="text-gray-600 mb-4">
+        <h2 className="text-2xl font-bold mb-2 text-gray-900">{car.name}</h2>
+        <p className="text-gray-500 mb-5 text-sm">
           Premium 2026 model with advanced features, luxury interior and
           top-tier performance.
         </p>
@@ -143,13 +147,13 @@ export default function LatestCarPage() {
         overlay="dark"
       />
 
-      <div className="max-w-5xl mx-auto mt-6 px-4">
+      <div className="max-w-7xl mx-auto mt-8 px-4 pb-16">
         <BrandFilter brands={BRANDS} selected={selectedBrand} onSelect={handleBrandSelect} />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {loading
             ? Array.from({ length: 6 }).map((_, i) => (
-                <div key={i} className="w-full h-55 bg-gray-300 animate-pulse rounded-lg" />
+                <div key={i} className="w-full h-56 sm:h-64 md:h-72 lg:h-80 bg-gray-300 animate-pulse rounded-xl" />
               ))
             : images.map((img) => (
                 <CarTile key={img.src} img={img} onOpen={setSelectedCar} />
