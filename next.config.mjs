@@ -77,38 +77,8 @@ const nextConfig = {
     ];
 
     return [
-      // ── Next.js hashed chunks — immutable forever ──────────────────────────
-      ...(process.env.NODE_ENV === "production"
-        ? [
-            {
-              source: "/_next/static/:path*",
-              headers: [
-                { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
-              ],
-            },
-          ]
-        : []),
-
-      // ── Public image/font assets ───────────────────────────────────────────
-      {
-        source: "/:path*\\.(jpg|jpeg|png|webp|avif|gif|svg|ico|woff|woff2)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=2592000, stale-while-revalidate=86400",
-          },
-        ],
-      },
-
-      // ── SEO files — short cache so changes propagate quickly ───────────────
-      {
-        source: "/(sitemap.xml|robots.txt|manifest.webmanifest)",
-        headers: [
-          { key: "Cache-Control", value: "public, max-age=3600, stale-while-revalidate=86400" },
-        ],
-      },
-
-      // ── All routes: security headers ──────────────────────────────────────
+      // Cache-Control is intentionally omitted — Vercel CDN manages caching.
+      // minimumCacheTTL in the images config above controls Next.js image cache.
       {
         source: "/:path*",
         headers: securityHeaders,
