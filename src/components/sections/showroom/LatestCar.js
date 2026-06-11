@@ -150,7 +150,7 @@ export default function LatestCarPage() {
       <div className="max-w-7xl mx-auto mt-8 px-4 pb-16">
         <BrandFilter brands={BRANDS} selected={selectedBrand} onSelect={handleBrandSelect} />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
           {loading
             ? Array.from({ length: 6 }).map((_, i) => (
                 <div key={i} className="w-full h-56 sm:h-64 md:h-72 lg:h-80 bg-gray-300 animate-pulse rounded-xl" />
